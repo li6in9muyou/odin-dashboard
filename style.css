@@ -1,0 +1,176 @@
+.sideBar {
+  --text: white;
+
+  background-color: var(--bg);
+  color: var(--text);
+
+  display: flex;
+  flex-direction: column;
+  min-width: 25%;
+  max-width: fit-content;
+  min-height: 100vh;
+}
+
+.link {
+  font-size: 1rem;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.link-lg {
+  font-size: 1.6rem;
+}
+
+.link-logo > svg {
+  width: 1.3em;
+  height: 1.3em;
+}
+
+.link-text {
+  text-transform: capitalize;
+}
+
+.sideBar-personalLinks,
+.sideBar-serviceLinks,
+.sideBar-companyLogo {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+  list-style: none;
+}
+
+main {
+  flex: 1;
+}
+
+header {
+  background-color: white;
+  box-shadow: 0 0 5px 0 gray;
+}
+
+.searchBar {
+  width: 100%;
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-between;
+}
+
+.searchBar-search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 10px;
+  margin-right: 80px;
+}
+
+.searchBar-searchIcon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.searchBar-input {
+  line-height: 1.5rem;
+  border-radius: 9999px;
+  border: none;
+  background-color: #e2e8f0;
+  flex: 1;
+}
+
+.titleBar {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.titleBar-notification {
+  cursor: pointer;
+}
+
+.titleBar-notification > svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.avatar > .avatar-avatarImage {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 10px;
+}
+
+.avatar > .avatar-avatarImage > img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  border-radius: 9999px;
+}
+
+.avatar-displayName {
+  font-weight: bold;
+}
+
+.avatar-lg {
+}
+
+.avatar-lg > .avatar-avatarImage {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.avatar-lg > .avatar-avatarImage > img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  border-radius: 9999px;
+}
+
+.actionBar {
+  display: flex;
+  padding: 10px 20px;
+}
+
+.avatar-greeting {
+  font-weight: bold;
+}
+
+.avatar-greeting > small {
+  font-size: 0.7rem;
+}
+
+.avatar-greeting > h1 {
+  font-size: 1rem;
+}
+
+.actionBar-actions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-left: auto;
+}
+
+.btn-action {
+  background-color: var(--bg);
+  border-radius: 9999px;
+  padding: 6px 24px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 200ms transform;
+}
+
+.btn-action:hover {
+  transform: translateY(-2px);
+}
+
+.btn-action:active {
+  transform: scale(90%);
+}
