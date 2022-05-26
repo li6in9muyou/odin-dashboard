@@ -96,6 +96,12 @@ header {
   border: none;
   background-color: #e2e8f0;
   flex: 1;
+  padding-left: 10px;
+}
+
+.searchBar-input:focus-visible {
+  outline: dashed 3px lightgreen;
+  outline-offset: 5px;
 }
 
 .titleBar {
