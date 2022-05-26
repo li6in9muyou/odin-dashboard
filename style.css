@@ -98,14 +98,17 @@ header {
 }
 
 .avatar {
-  display: flex;
+  display: grid;
+  grid-template-columns: fit-content(0) 1fr;
+  grid-template-rows: fit-content(0) 1fr;
   align-items: center;
   cursor: pointer;
 }
 
 .avatar > .avatar-avatarImage {
-  width: 2rem;
-  height: 2rem;
+  grid-row: 1 / span 2;
+  width: 2.5rem;
+  height: 2.5rem;
   margin-right: 10px;
 }
 
@@ -117,6 +120,7 @@ header {
 }
 
 .avatar-displayName {
+  grid-row: 2;
   font-weight: bold;
 }
 
@@ -308,8 +312,32 @@ header {
 
 .trending {
   grid-area: 3 / 2;
+  background-color: #e2e8f0;
+  padding: 20px 25px 0 0;
+}
+
+.trending > h1 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .avatarList {
+  background-color: white;
   list-style: none;
+  overflow-y: auto;
+  border-radius: 5px;
+  padding: 10px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.avatar-displayName--fade {
+  color: #636363;
+  font-weight: normal;
+  max-width: 200px;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
