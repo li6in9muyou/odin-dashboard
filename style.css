@@ -174,3 +174,85 @@ header {
 .btn-action:active {
   transform: scale(90%);
 }
+
+.myProjects {
+  background-color: #e2e8f0;
+  padding: 20px 12px;
+}
+
+.myProjects > h1 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.projectsList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 3fr));
+  grid-gap: 20px 20px;
+}
+
+.project {
+  box-shadow: 3px 3px 5px 0 #00000011;
+  border-radius: 5px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 6px 1fr;
+  grid-template-rows: 1fr 30px;
+}
+
+.project-status {
+  border-radius: 5px 0 0 5px;
+  background-color: #f0b429;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.project-description {
+  padding: 20px 12px;
+  cursor: pointer;
+}
+
+.project-name {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.project-summary {
+  color: #636363;
+}
+
+.project-actions {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  justify-content: end;
+  padding-right: 20px;
+}
+
+.btn-fork,
+.btn-like,
+.btn-watch {
+  width: 16px;
+  cursor: pointer;
+  transition: 200ms transform;
+}
+
+.btn-fork:hover,
+.btn-like:hover,
+.btn-watch:hover {
+  transform: translateY(-10%);
+}
+
+.btn-fork:active,
+.btn-like:active,
+.btn-watch:active {
+  transform: scale(80%);
+}
+
+.btn-fork > svg,
+.btn-like > svg,
+.btn-watch > svg {
+  width: 100%;
+  height: 100%;
+}
