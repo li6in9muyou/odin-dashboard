@@ -17,6 +17,15 @@
   gap: 16px;
   align-items: center;
   cursor: pointer;
+  transition: 200ms transform;
+}
+
+.link:hover {
+  transform: translateY(-5px);
+}
+
+.link:active {
+  transform: scale(95%);
 }
 
 .link-lg {
