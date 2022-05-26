@@ -7,6 +7,11 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+      @font-face {
+        font-family: "Norse Bold";
+        src: url("https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf");
+      }
+
       * {
         margin: 0;
         padding: 0;
@@ -28,14 +33,14 @@
       <div class="sideBar-companyLogo">
         <div class="link link-lg">
           <div class="link-logo">
-            <svg viewBox="0 0 24 24">
-              <path
-                d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"
-                fill="currentColor"
-              />
-            </svg>
+            <img
+                    src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+                    alt="the logo of the odin project"
+            />
           </div>
-          <div class="link-text">Dashboard</div>
+          <div class="link-text" style="font-family: 'Norse Bold', sans-serif">
+            Odin Dashboard
+          </div>
         </div>
       </div>
       <ol class="sideBar-personalLinks">
